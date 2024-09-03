@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y: auto;
+    perspective: 10px;
+
+}
+.container{
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.cloud{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform : translateZ(-40px) scale(6);
+    z-index: -1;
+}
+.background{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform : translateZ(-15px) scale(2.5);
+    z-index: -1;
+}
+
+.welcome{
+    margin-top: 200px;
+    position: absolute;
+    font-weight: bolder;
+    transform:translateZ(-5px) scale(4);
+    color:hsl(60, 100%, 50%);
+    border-radius: 30px;
+    
+    display: flex;
+  }
+section{
+    background: gray;
+    padding-top: 5rem 0;
+    color:white;
+
+}
+.bg{
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.head{
+    position: absolute;
+    background-color: white;   
+    padding: 0.5rem 2.5rem;
+    top:50%;
+    left:50%;
+    transform: translateX(-20%) translateX(-20%);
+    color:black;
+    font-size:3.5rem;
+    font-weight:600;
+    border-radius: 10px;
+}
+.secHeading{
+    font-size:5rem;
+    padding:0 10rem;
+}
+.text{
+    font-size:1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg1{
+    background-image: url(asset/winter.avif);
+}
+.bg2{
+    background-image: url(asset/mansoon.jpg);
+}
+.bg3{
+    background-image: url(asset/spring.jpeg);
+}
+.bg4{
+    background-image: url(asset/summer.jpeg);
+}
